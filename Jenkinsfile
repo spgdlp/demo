@@ -8,12 +8,12 @@ pipeline {
     }
     stage('compile') {
       steps {
-        bat 'javac app.java'
+        bat 'javac /src/main/java/first_app/app.java'
       }
     }
 	stage('execute') {
       steps {
-        bat 'java app.java'
+        bat 'java /src/main/java/first_app/app.java'
       }
     }
   }
